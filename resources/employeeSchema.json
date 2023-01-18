@@ -1,0 +1,32 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "number",
+        "minLength": 1
+      },
+      "first_name": {
+        "type": "string",
+        "minLength": 2
+      },
+      "manager": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "salary": {
+        "type": "number",
+        "minimum": 1
+      }
+    },
+    "required": [
+      "id",
+      "first_name",
+      "salary",
+      "manager"
+    ]
+  }
+}
